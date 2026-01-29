@@ -1,0 +1,126 @@
+---
+slug: "ai-interview-helper"
+title: "Building an AI-Assisted Interview Helper"
+description: "how i'm building an ai tool to help crack coding interviews (maybe)"
+date: "2025-01-28"
+image: "/blogimage.jpeg"
+---
+
+## the problem with coding interviews
+
+let's be real - coding interviews can be intimidating. you're sitting there, someone's watching you code, and your brain decides to forget literally everything you've ever learned. sounds familiar? yeah, me too.
+
+so i thought... what if there was an ai assistant that could help? not to cheat (that's lame), but to actually learn better and practice smarter.
+
+---
+
+## what i'm building
+
+**fkleetcode** - an ai-assisted interview helper that:
+- analyzes coding problems and breaks them down
+- gives hints when you're stuck (not solutions!)
+- explains concepts you're struggling with
+- tracks your progress and weak areas
+- simulates real interview scenarios
+
+basically, it's like having a patient mentor who doesn't judge you for forgetting how hashmap works for the 100th time lol
+
+---
+
+## the tech stack
+
+since this is an ml/ai project, here's what i'm using:
+
+**backend:**
+- python (obviously)
+- langchain for the ai orchestration
+- openai/gemini for the llm
+- faiss for storing problem embeddings
+
+**frontend:**
+- next.js + typescript
+- tailwind css (keeping it simple)
+- real-time websockets for the interview simulation
+
+---
+
+## cool features i'm working on
+
+### 1. smart hint system
+instead of just giving you the answer, it asks questions:
+- "have you considered using a different data structure?"
+- "what's the time complexity of your current approach?"
+- "can you optimize this nested loop?"
+
+### 2. interview simulation mode
+practice with an ai interviewer that:
+- asks follow-up questions like a real interviewer
+- checks your thought process, not just the code
+- gives constructive feedback after
+
+### 3. progress tracking
+see where you're struggling:
+- weak on dynamic programming? here are similar problems
+- good at arrays but terrible at trees? focus areas highlighted
+- track improvement over time
+
+---
+
+## challenges i'm facing
+
+**making hints actually helpful:**
+too vague = useless. too specific = basically the answer. finding the sweet spot is hard.
+
+**avoiding the "just use chatgpt" problem:**
+why use this when you can just ask chatgpt? fair point. but this is designed specifically for interview prep with structured learning paths.
+
+**keeping latency low:**
+nobody wants to wait 10 seconds for a hint during practice. optimizing the llm calls is tricky.
+
+---
+
+## current status
+
+right now it's in early development. i've got:
+- ✅ basic problem analysis working
+- ✅ hint generation (still needs fine-tuning)
+- ✅ simple ui for practice
+- 🚧 interview simulation mode (in progress)
+- 🚧 progress tracking dashboard (planned)
+
+---
+
+## why build this?
+
+honestly? i was preparing for interviews myself and got frustrated with existing tools. most are either:
+- just problem lists (thanks leetcode, very helpful)
+- too expensive ($50/month? nah)
+- not interactive enough
+
+plus, it's a great excuse to work with langchain and learn about ai agent design.
+
+---
+
+## what's next
+
+planning to add:
+- voice-based interviews (practice explaining out loud)
+- company-specific prep modes (faang, startup, etc)
+- peer practice matching (1v1 mock interviews)
+- open source the core engine
+
+---
+
+## try it out (eventually)
+
+still building, but if you're interested, star the repo: 
+[github.com/Partha-png/fkleetcode](https://github.com/Partha-png/fkleetcode)
+
+and hey, if you have ideas or feedback, hit me up! building in public is fun :)
+
+---
+
+**tl;dr:** building an ai interview helper that actually helps you learn, not just copy-paste solutions. wish me luck (and patience for all the edge cases).
+
+stay curious,  
+~ parth
