@@ -77,7 +77,7 @@ export const Timeline = () => {
 
   const data: Data[] = [
     {
-      title: "Gen AI Intern at FutureClinic",
+      title: "Gen AI Intern at SmartBot360",
       href: "https://futureclinic.com/",
       content: [
         {

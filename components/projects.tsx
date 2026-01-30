@@ -95,6 +95,15 @@ const Projects = ({ showAll = false }: { showAll?: boolean }) => {
   const projects: Project[] = [
 
     {
+      title: "MedGPT",
+      src: "/medgpt_preview.png",
+      video: "",
+      description: "AI-powered medical RAG system for intelligent health queries (currently modifying...)",
+      tech: ["python", "langchain", "fastapi", "streamlit"],
+      github: "https://github.com/Partha-png/medical_RAG_system",
+      live: "",
+    },
+    {
       title: "Auto-Refactor bot",
       src: "/auto_refactor_preview.png",
       video: "",
